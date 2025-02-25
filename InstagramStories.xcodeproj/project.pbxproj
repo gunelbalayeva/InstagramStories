@@ -13,6 +13,9 @@
 		CE4636822D6DDF1C0054AEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4636802D6DDF1C0054AEFA /* Main.storyboard */; };
 		CE4636842D6DDF1F0054AEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4636832D6DDF1F0054AEFA /* Assets.xcassets */; };
 		CE4636872D6DDF1F0054AEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4636852D6DDF1F0054AEFA /* LaunchScreen.storyboard */; };
+		CE46368F2D6DE1640054AEFA /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46368E2D6DE1640054AEFA /* StoryCollectionViewCell.swift */; };
+		CE4636912D6DE2050054AEFA /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4636902D6DE2050054AEFA /* UICollectionView+Ext.swift */; };
+		CE4636972D6DE7020054AEFA /* CategoryInnerViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4636962D6DE7020054AEFA /* CategoryInnerViewControlller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CE4636832D6DDF1F0054AEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4636862D6DDF1F0054AEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4636882D6DDF1F0054AEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE46368E2D6DE1640054AEFA /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE4636902D6DE2050054AEFA /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		CE4636962D6DE7020054AEFA /* CategoryInnerViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInnerViewControlller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		CE4636792D6DDF1C0054AEFA /* InstagramStories */ = {
 			isa = PBXGroup;
 			children = (
-				CE46367A2D6DDF1C0054AEFA /* AppDelegate.swift */,
-				CE46367C2D6DDF1C0054AEFA /* SceneDelegate.swift */,
+				CE4636952D6DE6DC0054AEFA /* Category */,
+				CE4636942D6DE6180054AEFA /* app */,
+				CE4636932D6DE5E50054AEFA /* cell */,
+				CE4636922D6DE5C70054AEFA /* Extension */,
 				CE46367E2D6DDF1C0054AEFA /* ViewController.swift */,
 				CE4636802D6DDF1C0054AEFA /* Main.storyboard */,
 				CE4636832D6DDF1F0054AEFA /* Assets.xcassets */,
@@ -65,6 +73,39 @@
 				CE4636882D6DDF1F0054AEFA /* Info.plist */,
 			);
 			path = InstagramStories;
+			sourceTree = "<group>";
+		};
+		CE4636922D6DE5C70054AEFA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE4636902D6DE2050054AEFA /* UICollectionView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE4636932D6DE5E50054AEFA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE46368E2D6DE1640054AEFA /* StoryCollectionViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		CE4636942D6DE6180054AEFA /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CE46367A2D6DDF1C0054AEFA /* AppDelegate.swift */,
+				CE46367C2D6DDF1C0054AEFA /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CE4636952D6DE6DC0054AEFA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE4636962D6DE7020054AEFA /* CategoryInnerViewControlller.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4636972D6DE7020054AEFA /* CategoryInnerViewControlller.swift in Sources */,
+				CE46368F2D6DE1640054AEFA /* StoryCollectionViewCell.swift in Sources */,
 				CE46367F2D6DDF1C0054AEFA /* ViewController.swift in Sources */,
 				CE46367B2D6DDF1C0054AEFA /* AppDelegate.swift in Sources */,
 				CE46367D2D6DDF1C0054AEFA /* SceneDelegate.swift in Sources */,
+				CE4636912D6DE2050054AEFA /* UICollectionView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,18 @@ class StoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         imageView.layer.cornerRadius = imageView.frame.height / 2
-        imageView.layer.borderColor = UIColor.white.cgColor
-        imageView.layer.borderWidth = 4
+        imageView.layer.borderColor = UIColor.black.cgColor
+        imageView.layer.borderWidth = 2
+        imageView.contentMode = .scaleAspectFill
+        
     }
+}
+
+struct StoryModel {
+  
+    var image:String
+    var name: String
+
+    
+    
 }
